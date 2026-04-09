@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="styles.css" rel="stylesheet">
+  <script defer src="script.js"></script>
+  <title>Clock</title>
+</head>
+
+<body>
+  <div class="app">
+    <div class="layout">
+
+      <!-- Top Section -->
+      <div class="top-bar">
+        <h1 class="title">Live Clock</h1>
+
+        <div class="control-row">
+          <select id="timezone-select">
+            <option value="local">Local Time</option>
+            <option value="America/New_York">New York</option>
+            <option value="America/Los_Angeles">Los Angeles</option>
+            <option value="Europe/London">London</option>
+            <option value="Asia/Tokyo">Tokyo</option>
+          </select>
+
+          <button id="toggle-theme">Toggle Theme</button>
+        </div>
+
+        <div id="timezone-display"></div>
+      </div>
+
+      <!-- Clock Section -->
+      <div class="clock-wrapper">
+        <div class="clock">
+          <div class="hand hour" data-hour-hand></div>
+          <div class="hand minute" data-minute-hand></div>
+          <div class="hand second" data-second-hand></div>
+        </div>
+
+        <div class="digital-wrapper">
+          <div class="digital" id="digital-clock"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
